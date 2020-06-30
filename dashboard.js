@@ -47,11 +47,19 @@ db.ref("users/" + uid).on("value", (snapshot) => {
 // adding click listener to the check answer btn
 checkAnswer.addEventListener("click", submitAnswer);
 
+// logging out button
+var logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+    localStorage.clear();
+    window.location = "index.html"
+});
+
 // adding click listener to switch wordlist level
 changeWordlistButton.addEventListener("click", changeWordlist)
 // gets the wordlist level and reads the file
 // whilst putting words, meanings and synoyms into a function into an object 
 function setup() {
+    // finding the associated file name with the user level
     var fileToRead = "";
     switch(wordlistLevel) {
         case "Beginner":
@@ -106,7 +114,11 @@ function displayQuestion(question) {
 }
 
 function submitAnswer () {
+    // firstly getting the stored answer from local storage
     var expectedAnswer = localStorage.getItem('questionAnswer');
+
+    // i convert to lowercase to avoid any case issues and only check
+    // spelling
     if (answer.value.toLowerCase() === expectedAnswer.toLowerCase()) {
         swal({
             title: "Yay!",
@@ -114,8 +126,7 @@ function submitAnswer () {
             icon: "success"
         });
 
-        localStorage.setItem('questionAnswer', null);
-
+        // adding points and then making a new question
         userPoints += 100;
         showPoints();
         updatePoints();
@@ -129,11 +140,15 @@ function submitAnswer () {
     }
 }
 
+// just showing the points on the screen
 function showPoints() {
     pointsText.innerHTML = "Total Points: " + userPoints.toString();
 }
 
+
 function updatePoints() {
+    // getting the current data and just only modifying
+    // the points field
     var dataUpdated;
     db.ref("users/" + uid).on("value", (snapshot) => {
         var data = snapshot.val()
@@ -144,14 +159,16 @@ function updatePoints() {
     db.ref("users/" + uid).set(dataUpdated)
 }
 
+// changes the wordlist in the database
 function changeWordlist() {
+    // getting the current data in database
+    // because I don't want to overwrite anything
     var dataUpdated;
     db.ref("users/" + uid).on("value", (snapshot) => {
         var data = snapshot.val()
         dataUpdated = data;
     });    
 
-    db.ref("users/" + uid).set(dataUpdated)
     swal({
         title: "Change Wordlist!",
         text: "Choose a wordlist level",
@@ -162,6 +179,8 @@ function changeWordlist() {
         }
     })
     .then((value) => {
+        // here I am taking the value from the button presses
+        // and sending it to database
         dataUpdated.wordlist = value;
         db.ref("users/" + uid).set(dataUpdated);
         location.reload();

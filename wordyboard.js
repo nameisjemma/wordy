@@ -23,6 +23,13 @@ var wordyboard = document.getElementById("wordyboard");
 var wordlistLevel = "";
 var usersToPoints = [];
 
+// logging out button
+var logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+    localStorage.clear();
+    window.location = "index.html"
+});
+
 db.ref("users/").on("value", (snapshot) => {
     var data = snapshot.val();
     for (user in data) {
@@ -31,6 +38,8 @@ db.ref("users/").on("value", (snapshot) => {
         usersToPoints.push([username, points]);
     }
 
+    // sorts the users by their points. I based my code here
+    // off of an example on stack overflow
     usersToPoints = usersToPoints.sort(function(a, b) { 
         console.log(a, b)
         return b[1] - a[1]; 
@@ -41,6 +50,8 @@ db.ref("users/").on("value", (snapshot) => {
     }
 });
 
+// creates new elements for wordyboard users
+// and adds them to the table
 function displayWordyboardUser(pos, u, p) {
     var tr = document.createElement("tr");
 

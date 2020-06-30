@@ -24,6 +24,13 @@ db.ref("users/" + uid).on("value", (snapshot) => {
     displayWordlist();
 });
 
+// logging out button
+var logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+    localStorage.clear();
+    window.location = "index.html"
+});
+
 function displayWordlist() {
     var fileToRead = "";
     switch(wordlistLevel) {
@@ -42,6 +49,10 @@ function displayWordlist() {
     .then(response => response.text())
     .then((text) => {
         var lines = text.split("\n");
+        // makes displayable elements to add
+        // to my wordlist table. 
+        // tr stands for table row.
+        // new element for every line
         for (line of lines) {
             var lineData = line.split(",");
 
