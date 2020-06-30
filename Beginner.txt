@@ -1,0 +1,30 @@
+Immediate,Occuring or accomplished without delay,Instant
+Vibrant,Pulsating with vigor and energy,Energetic
+Chiseled,Sharply or clearly shaped,Clear-cut
+Pulsation,A beat or throb,Throb
+Euphoria,A state of intense happiness and self-confidence,Joy
+Temporary,Effective for a time only,Passing
+Critical,Inclined to find fault or to judge with severity,Judgemental
+Begrudge,To envy or resent the pleasure or good fortune of (someone),Envy
+Irritable,Easily irriated or annoyed,Annoyed
+Contemptuous,Showing or expressing contempt or disdain,Disrespectful
+Mercy,Compassionate or kindly forbearance shown toward an offender,Compassionate
+Virtue,Moral excellence,Goodness
+Convene,To come together or assemble,Gather
+Magnificent,Making a splendid appearance or show,Splendid
+Descend,To go or pass from a higher to a lower place,Move
+Gouged,To scoop or dig or force out with or as if with a gouge,Scooped
+Preliminary,Preceding and leading up to the main part,Introductory
+Perched,To settle or rest in some elevated position,Rest
+Juvenile,Suitable or intended for young,Young
+Sheath,A case or covering for the blade of a sword,Covering
+Ingenious,Characterised by cleverness or originality of invention,Intelligent
+Especially,Particularly or markedly,Particularly
+Committee,A person or group of persons elected or appointed to perform some service or function,Board
+Vantage,A position or place affording some advantage or a commanding view,Leverage
+Spectacle,Anything presented to the sight or view,Sight
+Adapt,To make suitable to requirements or conditions,Modify
+Mannerisms,A habitual or characteristic manner,Habit
+Altitude,Extent or distance upward,Height
+Ancestor,A person from whom one is descended,Forebear
+Complaining,To express dissatisfaction or find fault,Grumble

@@ -1,0 +1,30 @@
+Cumulative,Increasing or growing by acculmulation or successive additions,Collective
+Expository,Serving to set forth or explain,Informative
+Equivalent,Equal in value,Correspondent
+Foreshadow,To show or indicate beforehand,Predict
+Inclined,Deviating in direction from the horizontal or vertical,Sloping
+Equilibrium,A state of rest or balance due to the equal action of opposing forces,Stability
+Ponder,To consider something deeply and thoroughly,Reflect
+Wield,To excerise power,Control
+Imminent,Likely to occur at any moment,Near
+Bottleneck,A narrow entrance or passageway,Barrier
+Recede,To go or move away,Retreat
+Invincible,Incapable of being conquered,Unyielding
+Desertion,The act or state of being abandoned,Avoidance
+Integrate,To bring together or incorporate into a whole,Merge
+Requisite,Required or necessary for a particular purpose,Needed
+Paraphrase,A restatement of a text or passage giving the meaning in another form,Rewording
+Spatial,Existing or occuring in space,Geographical
+Plausible,Having an appearance of truth or reason,Believable
+Perspective,The state of one's ideas,Viewpoint
+Significance, of importance, importance
+Signal,Anything that serves to indicate or warn or direct,Warning
+Literal,Following the words of the original very closely and exactly,Exact
+Intermitten,Occuring at irregular intervals,Odd
+Authorisation,Permission or power granted by authority,Permission
+Adjourn,Break off with the intention of resuming it later,Withdraw
+Discretion,The quality of behaving or speaking in such a way as to avoid causing offence or revealing confidential information,Care
+Disruptive,Causing or tending to cause trouble,Troublesome
+Predecessor,A person who held a job or office before the current holder,Forerunner
+Existence,The fact or state of living or having objective reality,Alive
+Undermine,Lessen the effectiveness or power or ablity of gradually or insidiously,Weaken
